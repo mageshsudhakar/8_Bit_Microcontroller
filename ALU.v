@@ -37,7 +37,7 @@ begin
 				Out_ALU = 8'h0 - Operand2;
 				CarryOut = !Out_ALU[7];
 			    end
-		default : Ouut_ALU = Operand2;
+		default : Out_ALU = Operand2;
 	endcase
 end
 assign o = Out_ALU[7] ^ Out_ALU[6];
